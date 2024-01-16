@@ -11,8 +11,10 @@
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="Logo da trybewarts">
+
     <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form class="trybewarts-login" action="" id="trybewarts-login">
+
+    <form class="trybewarts-login" method="get" action="" id="trybewarts-login">
       <input type="email" id="email" name="email" placeholder="Email">
 
       <input type="password" name="password" placeholder="Senha" id="password">
@@ -23,9 +25,20 @@
 
   <main class="flex-container">
     <form class="flex-container" action="" id="evaluation-form">
-     
+      <label for="">
+        <input type="text" placeholder="Nome" id="input-name">
+      </label>
+
+      <label for="">
+        <input type="text" placeholder="Sobrenome" id="input-lastname">
+      </label>
+
+      <label for="">
+        <input type="email" placeholder="Email" name="Email" id="input-email">
+      </label>
+
     </form>
-     <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+    <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
   </main>
   <script src="script.js"></script>
 </body>
