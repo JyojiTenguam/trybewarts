@@ -64,6 +64,7 @@ h1 {
 
 .flex-container {
   display: flex;
+  padding: 50px;
 }
 
 #trybewarts-forms-logo {
@@ -86,6 +87,11 @@ h1 {
 }
 
 #house {
-  width: 250px;
+  width: 257px;
   height: 28px;
+}
+
+#label-form {
+  display: flex;
+  flex-direction: column;
 }
