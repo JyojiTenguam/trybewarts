@@ -56,6 +56,7 @@ h1 {
 }
 
 #evaluation-form {
+  flex-direction: column;
   display: flex;
 }
 
