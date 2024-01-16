@@ -58,9 +58,14 @@ h1 {
 #evaluation-form {
   flex-direction: column;
   display: flex;
+  width: 675px;
 }
 
 .flex-container {
   display: flex;
-  width: 675px;
+}
+
+#trybewarts-forms-logo {
+  display: flex;
+  height: 500px;
 }
