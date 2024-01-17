@@ -37,12 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const maxCharacters = 500;
 
   // Initialize the counter with the maximum number of characters
-  counter.textContent = `Characters left: ${maxCharacters}`;
+  counter.textContent = `Caracteres restantes: ${maxCharacters}`;
 
   textarea.addEventListener('input', () => {
     const remainingCharacters = maxCharacters - textarea.value.length;
     // Update the counter text and style
-    counter.textContent = `Characters left: ${remainingCharacters}`;
+    counter.textContent = `Caracteres restantes: ${remainingCharacters}`;
     counter.style.color = remainingCharacters >= 0 ? 'black' : 'red';
   });
 });
