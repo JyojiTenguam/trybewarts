@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <title>Trybewarts</title>
 </head>
 
@@ -22,7 +23,7 @@
       <button type="submit">Entrar</button>
     </form>
   </header>
-
+  <h1 class="title-form"> Formulário de Avaliação</h1>
   <main class="flex-container">
     <form class="flex-container" action="" id="evaluation-form">
       <div class="div-form">
@@ -47,31 +48,38 @@
         </select>
       </div>
       <hr>
+      <div class="div-fc">
+        <div class="div-family">
+          <label for="label-family" id="label-family">Qual sua família?</label>
 
-      <label for="label-family" id="label-family">Qual sua família?</label>
+          <label for="frontend"> <input type="radio" name="family" id="frontend" value="Frontend">Família
+            Frontend</label>
 
-      <label for="frontend"> <input type="radio" name="family" id="frontend" value="Frontend">Família Frontend</label>
+          <label for="backend"><input type="radio" name="family" value="Backend" id="backend">Família Backend</label>
 
-      <label for="backend"><input type="radio" name="family" value="Backend" id="backend">Família Backend</label>
+          <label for="fullStack"> <input type="radio" name="family" value="FullStack" id="fullStack">Família
+            FullStack</label>
+        </div>
 
-      <label for="fullStack"> <input type="radio" name="family" value="FullStack" id="fullStack">Família
-        FullStack</label>
+        <div class="div-content">
+          <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
 
-      <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-
-      <label for=""><input type="checkbox" name="" id="label-content" class="subject"
-          value="Comunicação">Comunicação</label>
-      <label for=""><input type="checkbox" name="" id="label-content" class="subject"
-          value="Trabalho em equipe">Trabalho em equipe</label>
-      <label for=""><input type="checkbox" name="" id="label-content" class="subject"
-          value="Negociação">Negociação</label>
-      <label for=""><input type="checkbox" name="" id="label-content" class="subject" value="Escuta ativa">Escuta
-        ativa</label>
-      <label for=""><input type="checkbox" name="" id="label-content" class="subject" value="Métodos de array">Métodos
-        de array</label>
-      <label for=""><input type="checkbox" name="" id="label-content" class="subject" value="Jest">Jest</label>
-
-      <div>
+          <label for=""><input type="checkbox" name="" id="label-content" class="subject"
+              value="Comunicação">Comunicação</label>
+          <label for=""><input type="checkbox" name="" id="label-content" class="subject"
+              value="Trabalho em equipe">Trabalho em equipe</label>
+          <label for=""><input type="checkbox" name="" id="label-content" class="subject"
+              value="Negociação">Negociação</label>
+          <label for=""><input type="checkbox" name="" id="label-content" class="subject" value="Escuta ativa">Escuta
+            ativa</label>
+          <label for=""><input type="checkbox" name="" id="label-content" class="subject"
+              value="Métodos de array">Métodos
+            de array</label>
+          <label for=""><input type="checkbox" name="" id="label-content" class="subject" value="Jest">Jest</label>
+        </div>
+      </div>
+      <hr>
+      <div class="div-rate">
         <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
         <label for=""><input type="radio" name="rate" id="" value="1">1</label>
         <label for=""><input type="radio" name="rate" id="" value="2">2</label>
@@ -85,21 +93,37 @@
         <label for=""><input type="radio" name="rate" id="" value="10">10</label>
       </div>
 
-      <label for="textarea" class="textarea">Descreva os principais pontos de aprendizado até aqui (1 hard skill / 1
-        soft skill):</label>
-      <textarea name="" id="textarea" cols="30" rows="10" minlength="20"
-        maxlength="500">Resposta para pergunta</textarea>
+      <div class="div-textarea">
+        <label for="textarea" class="textarea">Descreva os principais pontos de aprendizado até aqui (1 hard skill / 1
+          soft skill):</label>
+        <textarea name="" id="textarea" cols="60" rows="10" minlength="20"
+          maxlength="500">Resposta para pergunta</textarea>
+      </div>
       <div id="counter">Quantidade de caracteres:</div>
-
-      <label for="" id="label-infos"><input type="checkbox" name="" id="agreement" class="subject">Você concorda com o
-        uso das informações acima?</label>
-
+      <div class="div-info">
+        <label for="" id="label-infos"><input type="checkbox" name="" id="agreement" class="subject">Você concorda com o
+          uso das informações acima?</label>
+      </div>
       <button type="submit" id="submit-btn" disabled>Enviar</button>
     </form>
-    <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+
+    <div id="form-data" style="display: none;">
+      <p id="nome-field"></p>
+      <p id="email-field"></p>
+      <p id="casa-field"></p>
+      <p id="familia-field"></p>
+      <p id="materias-field"></p>
+      <p id="avaliacao-field"></p>
+      <p id="observacoes-field"></p>
+    </div>
+
+    <div class="div-img">
+      <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+    </div>
   </main>
   <footer>Direitos reservados à Trybewarts©</footer>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
