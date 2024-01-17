@@ -30,3 +30,19 @@ window.onload = function setupPage() {
   const agreement = document.querySelector('#agreement');
   agreement.addEventListener('change', enableSubmit);
 };
+
+document.addEventListener('DOMContentLoaded', () => {
+  const textarea = document.getElementById('textarea');
+  const counter = document.getElementById('counter');
+  const maxCharacters = 500;
+
+  // Initialize the counter with the maximum number of characters
+  counter.textContent = `Characters left: ${maxCharacters}`;
+
+  textarea.addEventListener('input', () => {
+    const remainingCharacters = maxCharacters - textarea.value.length;
+    // Update the counter text and style
+    counter.textContent = `Characters left: ${remainingCharacters}`;
+    counter.style.color = remainingCharacters >= 0 ? 'black' : 'red';
+  });
+});
