@@ -19,3 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     submitButton.disabled = !emailInput.checkValidity() || !passwordInput.checkValidity();
   });
 });
+
+function enableSubmit() {
+  const submitBtn = document.querySelector('#submit-btn');
+  const agreement = document.querySelector('#agreement');
+  submitBtn.disabled = !agreement.checked;
+}
+
+window.onload = function setupPage() {
+  const agreement = document.querySelector('#agreement');
+  agreement.addEventListener('change', enableSubmit);
+};
