@@ -8,7 +8,6 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   height: 100px;
-  width: 100%;
   padding: 15px;
 }
 
@@ -24,11 +23,36 @@
 }
 
 #trybewarts-login {
+  border-radius: 5px;
   display: flex;
   align-items: center;
   flex-grow: 0.5;
-  width: 20.5%;
+  width: 30%;
 }
+
+.div-form select {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.trybewarts-login button {
+  background-color: rgb(78, 44, 131);
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  width: 150px;
+  height: 40px;
+}
+
+.div-form input {
+  padding: 7px;
+  border-radius: 10px;
+}
+
+#trybewarts-login input {
+  border-radius: 10px;
+}
+
 
 #email {
   margin-right: 20px;
@@ -41,9 +65,13 @@
 }
 
 #submit-btn {
+  background-color: rgb(78, 44, 131);
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
   margin-right: 20px;
   height: 35px;
-  width: 100px;
+  width: 460px;
 }
 
 h1 {
@@ -97,6 +125,8 @@ h1 {
 }
 
 #textarea {
+  border: solid 2px rgb(78, 44, 131);
+  border-radius: 5px;
   resize: none;
 }
 
@@ -148,7 +178,7 @@ h1 {
 footer {
   width: auto;
   clear: both;
-  padding: 13px;
+  padding: 29px;
   background-color: rgb(60, 64, 74);
   box-sizing: border-box;
   text-align: center;
