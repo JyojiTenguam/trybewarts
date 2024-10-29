@@ -50,5 +50,8 @@ A página desenvolvida apresenta as seguintes características:
     ```bash
     cd trybewarts
     ```
-
-3. Abra o arquivo `index.html` em seu navegador para visualizar o projeto.
+3. Instale as dependências do projeto:
+    ```sh
+    npm install
+    ```
+4. Abra o arquivo `index.html` em seu navegador para visualizar o projeto.
