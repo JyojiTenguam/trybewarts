@@ -1,67 +1,58 @@
-# Projeto Trybewarts Wizarding School 🧙
+# 🧙‍♂️ Trybewarts Wizarding School
 
-Este projeto foi desenvolvido como parte do curso da Trybe, com o objetivo de criar um formulário interativo para a escola de bruxos Trybewarts. A seguir, você encontrará informações sobre como configurar e executar o projeto, bem como detalhes sobre as funcionalidades implementadas.
+Projeto desenvolvido como parte do curso da Trybe, com o objetivo de criar um formulário interativo para a escola de bruxos Trybewarts. O foco principal foi aplicar conceitos de manipulação de DOM, lógica em JavaScript e boas práticas de estruturação com HTML e CSS.
 
-## Tecnologias Utilizadas
+## ✨ Demonstração
 
-- JavaScript
-- HTML
-- CSS
+> Este projeto permite que usuários preencham um formulário simulando uma inscrição na escola Trybewarts, com validações e interações dinâmicas.
 
-## Funcionalidades do Projeto
+## 📋 Índice
 
-A página desenvolvida apresenta as seguintes características:
+- [Sobre](#-sobre)
+- [Habilidades desenvolvidas](#-habilidades-desenvolvidas)
+- [Tecnologias utilizadas](#-tecnologias-utilizadas)
+- [Como rodar o projeto](#-como-rodar-o-projeto)
+- [Autor](#-autor)
 
-1. **Barra Superior**: Uma barra verde na parte superior da página com a classe `header` e cor de fundo `rgb(50, 167, 145)`.
-2. **Logotipo da Trybewarts**: O logotipo está posicionado dentro do header.
-3. **Formulário de Login**: Um formulário com inputs de email e senha, que dispara alertas com base na validação dos dados inseridos.
-4. **Título Centralizado**: Um título "Trybewarts" centralizado no cabeçalho.
-5. **Formulário Principal**: Um formulário dentro da tag `main` com largura de 675px.
-6. **Direção Vertical**: Os itens do formulário estão organizados verticalmente.
-7. **Logo ao Lado Direito**: A logo da Trybewarts posicionada ao lado direito da página.
-8. **Inputs**: Campos para nome, sobrenome e email no formulário.
-9. **Select**: Um campo select com opções de casas.
-10. **Campos lado a lado**: Campos de Nome/Sobrenome e Email/Casa posicionados lado a lado.
-11. **Inputs do Tipo Radio**: Três inputs do tipo radio para a escolha da família.
-12. **Checkboxes**: Seis opções de checkbox para conteúdos desejados.
-13. **Campo de Avaliação**: Um campo de avaliação de 1 a 10 sobre a Trybewarts.
-14. **Textarea**: Uma textarea com limite de 500 caracteres para feedback.
-15. **Checkbox de Validação**: Um checkbox para validar as informações digitadas.
-16. **Botão de Enviar**: Um botão de submit para enviar o formulário.
-17. **Habilitação do Botão**: O botão de enviar é habilitado ou desabilitado conforme o checkbox.
-18. **Rodapé**: Um rodapé com direitos reservados à Trybewarts.
+## 💡 Sobre
 
-### Requisitos Bônus
+O **Trybewarts Wizarding School** é uma aplicação web que simula um formulário de inscrição para uma escola de bruxaria fictícia. O projeto foi desenvolvido utilizando HTML, CSS e JavaScript puro, reforçando a prática da lógica de programação e interação com elementos da interface.
 
-- **Contador de Caracteres**: Um contador que atualiza o número de caracteres enquanto a textarea é digitada.
-- **Substituição do Formulário**: Ao clicar no botão Enviar, o formulário é substituído pelas informações preenchidas pelo usuário.
-- **Versão Mobile**: O formulário é responsivo e otimizado para dispositivos móveis.
+## 🛠️ Habilidades desenvolvidas
 
-## Instruções de Instalação e Uso
+- Manipulação da DOM com JavaScript
+- Validação de formulários
+- Criação dinâmica de elementos
+- Implementação de eventos de clique e seleção
+- Aplicação de estilos com CSS
+- Organização semântica de uma estrutura HTML
 
-1. **Faça um Fork do Repositório**:
-   - No GitHub, acesse o [repositório original do projeto](https://github.com/JyojiTenguam/trybewarts) e clique no botão **"Fork"** no canto superior direito para criar uma cópia do projeto na sua conta.
+## 🧪 Tecnologias utilizadas
 
-2. **Clone o Repositório Forkado**:
-   - Após fazer o fork, clone o repositório para o seu computador:
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
 
-    ```bash
-    git clone git@github.com:seu-usuario/trybewarts.git
-    ```
+## 🚀 Como rodar o projeto
 
-3. **Navegue até o Diretório do Projeto**:
+1. Clone o repositório:
 
-    ```bash
-    cd trybewarts
-    ```
+   ```bash
+   git clone https://github.com/JyojiTenguam/trybewarts.git
+   ```
 
-4. **Instale as Dependências**:
+2. Acesse a pasta do projeto
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   cd trybewarts
+   ```
 
-5. **Visualize o Projeto**:
-   - Abra o arquivo `index.html` em seu navegador para visualizar o projeto.
+3. Instale as dependências
 
-Lembre-se de substituir `"seu-usuario"` pelo seu nome de usuário no GitHub para que o link do fork seja correto.
+   ```bash
+   npm install
+   ```
+
+## 👤 Autor
+
+Este projeto foi desenvolvido como parte do curso de Desenvolvimento Web da Trybe, por Jyoji Tenguam.
